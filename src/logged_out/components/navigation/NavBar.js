@@ -79,6 +79,11 @@ function NavBar(props) {
       name: "Login",
       onClick: openLoginDialog,
       icon: <LockOpenIcon className="text-white" />
+    },
+    {
+      link: "/schedule",
+      name: "📅",
+      icon: <BookIcon className="text-white" />
     }
   ];
   return (

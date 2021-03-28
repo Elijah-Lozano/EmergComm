@@ -132,7 +132,7 @@ function HeadSection(props) {
                         <Typography
                           variant={isWidthUp("lg", width) ? "h3" : "h4"}
                         >
-                          COVID-19 Vaccine Accessability
+                          No more need for long wait times.
                         </Typography>
                       </Box>
                       <div>
@@ -153,7 +153,7 @@ function HeadSection(props) {
                           classes={{ label: classes.extraLargeButtonLabel }}
                           href="/demo"
                         >
-                          Schedule an Appointment
+                          📅Schedule an Appointment📅
                         </Button>
                       </div>
                     </Box>
