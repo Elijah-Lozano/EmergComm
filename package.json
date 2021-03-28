@@ -16,6 +16,7 @@
     "classnames": "^2.2.6",
     "date-fns": "^2.19.0",
     "emoji-mart": "^3.0.1",
+    "google-maps-react": "^2.0.6",
     "js-cookie": "^2.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
