@@ -18,8 +18,8 @@ const styles = theme => ({
       paddingRight: theme.spacing(6)
     },
     [theme.breakpoints.down("sm")]: {
-      paddingLeft: theme.spacing(4),
-      paddingRight: theme.spacing(4)
+      paddingLeft: theme.spacing(7),
+      paddingRight: theme.spacing(7)
     },
     [theme.breakpoints.down("xs")]: {
       paddingLeft: theme.spacing(2),
@@ -112,6 +112,46 @@ function PricingSection(props) {
               pricing={
                 <span>
                   $49.99
+                  <Typography display="inline"> / month</Typography>
+                </span>
+              }
+              features={["Feature 1", "Feature 2", "Feature 3"]}
+            />
+          </Grid>
+          <Grid
+            item
+            className={classes.cardWrapper}
+            xs={12}
+            sm={6}
+            lg={3}
+            data-aos="zoom-in-up"
+            data-aos-delay={isWidthUp("md", width) ? "600" : "200"}
+          >
+            <PriceCard
+              title="Tycoon"
+              pricing={
+                <span>
+                  $99.99
+                  <Typography display="inline"> / month</Typography>
+                </span>
+              }
+              features={["Feature 1", "Feature 2", "Feature 3"]}
+            />
+          </Grid>
+          <Grid
+            item
+            className={classes.cardWrapper}
+            xs={12}
+            sm={6}
+            lg={3}
+            data-aos="zoom-in-up"
+            data-aos-delay={isWidthUp("md", width) ? "600" : "200"}
+          >
+            <PriceCard
+              title="Tycoon"
+              pricing={
+                <span>
+                  $99.99
                   <Typography display="inline"> / month</Typography>
                 </span>
               }

@@ -123,8 +123,7 @@ function HeadSection(props) {
                         <Typography
                           variant={isWidthUp("lg", width) ? "h3" : "h4"}
                         >
-                          Free Template for building a SaaS app using
-                          Material-UI
+                          COVID-19 Vaccine Accessability
                         </Typography>
                       </Box>
                       <div>
@@ -133,8 +132,8 @@ function HeadSection(props) {
                             variant={isWidthUp("lg", width) ? "h6" : "body1"}
                             color="textSecondary"
                           >
-                            Lorem ipsum dolor sit amet, consetetur sadipscing
-                            elitr, sed diam nonumy eirmod tempor invidunt
+                            Vaccine now strives for appointment excellence. We emphasize on optimal 
+                            accessibility for users of all ages and backgrounds.
                           </Typography>
                         </Box>
                         <Button
@@ -143,9 +142,9 @@ function HeadSection(props) {
                           fullWidth
                           className={classes.extraLargeButton}
                           classes={{ label: classes.extraLargeButtonLabel }}
-                          href="https://github.com/dunky11/react-saas-template"
+                          href="/demo"
                         >
-                          Download from GitHub
+                          Schedule an Appointment Now.
                         </Button>
                       </div>
                     </Box>

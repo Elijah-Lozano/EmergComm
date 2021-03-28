@@ -67,6 +67,7 @@ function PriceCard(props) {
               {feature}
             </Typography>
           </Box>
+          
         </Box>
       ))}
     </div>

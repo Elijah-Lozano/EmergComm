@@ -19,7 +19,7 @@ import ColoredButton from "../../../shared/components/ColoredButton";
 
 const styles = theme => ({
   footerInner: {
-    backgroundColor: theme.palette.common.darkBlack,
+    backgroundColor: theme.palette.common.green,
     paddingTop: theme.spacing(8),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2),
@@ -49,11 +49,11 @@ const styles = theme => ({
   },
   infoIcon: {
     color: `${theme.palette.common.white} !important`,
-    backgroundColor: "#33383b !important"
+    backgroundColor: theme.palette.common.green
   },
   socialIcon: {
     fill: theme.palette.common.white,
-    backgroundColor: "#33383b",
+    backgroundColor: theme.palette.common.green,
     borderRadius: theme.shape.borderRadius,
     "&:hover": {
       backgroundColor: theme.palette.primary.light
@@ -78,11 +78,11 @@ const styles = theme => ({
 const infos = [
   {
     icon: <PhoneIcon />,
-    description: "+1 555 123456"
+    description: "+1 956 324-3376"
   },
   {
     icon: <MailIcon />,
-    description: "support@company.com"
+    description: "support@vnow.net"
   }
 ];
 
@@ -101,7 +101,7 @@ const socialIcons = [
       </svg>
     ),
     label: "Github",
-    href: "https://github.com/dunky11/react-saas-template"
+    href: "https://github.com/Elijah-Lozano/VaccineNow"
   },
   {
     icon: (
@@ -159,7 +159,7 @@ function Footer(props) {
     <footer className="lg-p-top">
       <WaveBorder
         upperColor="#FFFFFF"
-        lowerColor={theme.palette.common.darkBlack}
+        lowerColor={theme.palette.common.green}
         animationNegativeDelay={4}
       />
       <div className={classes.footerInner}>
@@ -225,9 +225,9 @@ function Footer(props) {
             <Typography variant="h6" paragraph className="text-white">
               About the Company
             </Typography>
-            <Typography style={{ color: "#8f9296" }} paragraph>
-              Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
-              euismod convallis velit, eu auctor lacus vehicula sit amet.
+            <Typography style={{ color: theme.palette.common.white }} paragraph>
+              Vaccine now strives for appointment excellence. We emphasize on optimal accessibility for
+              users of all ages and backgrounds.
             </Typography>
             <Box display="flex">
               {socialIcons.map((socialIcon, index) => (

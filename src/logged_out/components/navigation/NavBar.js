@@ -52,12 +52,22 @@ function NavBar(props) {
   const menuItems = [
     {
       link: "/",
-      name: "Home",
+      name: "🏠",
       icon: <HomeIcon className="text-white" />
     },
     {
-      link: "/blog",
-      name: "Blog",
+      link: "/about",
+      name: "About",
+      icon: <BookIcon className="text-white" />
+    },
+    {
+      link: "/nearest-centers",
+      name: "Centers Nearby",
+      icon: <BookIcon className="text-white" />
+    },
+    {
+      link: "/demo",
+      name: "Demo",
       icon: <BookIcon className="text-white" />
     },
     {
@@ -82,7 +92,7 @@ function NavBar(props) {
               display="inline"
               color="primary"
             >
-              Wa
+              💉Vaccine
             </Typography>
             <Typography
               variant="h4"
@@ -90,7 +100,7 @@ function NavBar(props) {
               display="inline"
               color="secondary"
             >
-              Ver
+              Now
             </Typography>
           </div>
           <div>
