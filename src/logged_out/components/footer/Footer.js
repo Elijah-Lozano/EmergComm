@@ -182,7 +182,7 @@ function Footer(props) {
                   />
                 </Box>
                 <ColoredButton
-                  color={theme.palette.common.white}
+                  color={theme.palette.common.red}
                   variant="outlined"
                   type="submit"
                 >

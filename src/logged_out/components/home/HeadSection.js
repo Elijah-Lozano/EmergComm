@@ -73,7 +73,6 @@ const styles = (theme) => ({
     maxWidth: "100%",
     verticalAlign: "middle",
     borderRadius: theme.shape.borderRadius,
-    boxShadow: theme.shadows[4],
   },
   container: {
     marginTop: theme.spacing(6),
@@ -112,6 +111,16 @@ function HeadSection(props) {
             >
               <div className={classNames(classes.containerFix, "container")}>
                 <Box justifyContent="space-between" className="row">
+                  
+                <Hidden smDown>
+                    <Grid item md={6}>
+                      <ZoomImage
+                        src={`${process.env.PUBLIC_URL}/images/logged_out/headerImage.png`}
+                        className={classes.image}
+                        alt="header example"
+                      />
+                    </Grid>
+                  </Hidden>
                   <Grid item xs={12} md={5}>
                     <Box
                       display="flex"
@@ -138,26 +147,17 @@ function HeadSection(props) {
                         </Box>
                         <Button
                           variant="contained"
-                          color="secondary"
+                          color="primary"
                           fullWidth
                           className={classes.extraLargeButton}
                           classes={{ label: classes.extraLargeButtonLabel }}
                           href="/demo"
                         >
-                          Schedule an Appointment Now.
+                          Schedule an Appointment
                         </Button>
                       </div>
                     </Box>
                   </Grid>
-                  <Hidden smDown>
-                    <Grid item md={6}>
-                      <ZoomImage
-                        src={`${process.env.PUBLIC_URL}/images/logged_out/headerImage.jpg`}
-                        className={classes.image}
-                        alt="header example"
-                      />
-                    </Grid>
-                  </Hidden>
                 </Box>
               </div>
             </Card>
